@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.edu.usts.springbootpointmeterdetectionjavafx.controller.MainStageController">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="387.0" prefWidth="679.0">
+            <children>
+                <ImageView fx:id="qr_image_view" fitHeight="278.0" fitWidth="378.0" layoutX="10.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+                <Button fx:id="btn_choose_detect" layoutX="53.0" layoutY="332.0" mnemonicParsing="false" onAction="#choose_file" prefHeight="50.0" prefWidth="100.0" text="选择图片" />
+                <TextArea fx:id="qr_content_text_area" layoutX="408.0" layoutY="37.0" prefHeight="60.0" prefWidth="257.0" />
+                <Button fx:id="btn_choose_detect1" layoutX="212.0" layoutY="332.0" mnemonicParsing="false" onAction="#detect" prefHeight="50.0" prefWidth="100.0" text="开始识别" />
+                <Button id="search_history" layoutX="494.0" layoutY="126.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="50.0" prefWidth="100.0" text="查询历史" />
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>
